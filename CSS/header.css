@@ -1,0 +1,167 @@
+
+
+.header {
+    width: 1170px;
+    margin: 64px auto 0;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.description {
+    height: 100%;
+    width: 49%;
+    font-family: Poppins-SemiBold, sans-serif;
+}
+
+.description__BestHealthy {
+    background: #FFF0DC;
+    color: #FB9333;
+    display: inline-block;
+    padding: 16px;
+    border-radius: 50px;
+}
+
+.description__slogan {
+    margin-top: 30px;
+    font-family: Poppins-Bold, sans-serif;
+    font-size: 64px;
+    line-height: 130%;
+    letter-spacing: -2px;
+}
+
+.description__slogan span {
+    color: #FB9333;
+}
+
+.description__Healthy-Food-Offerings {
+    font-family: Poppins-Medium, sans-serif;
+    font-size: 20px;
+    color: #828282;
+    line-height: 160%;
+}
+
+.description__order {
+    width: 192px;
+    line-height: 64px;
+    margin-top: 30px;
+    font-family: Poppins-SemiBold, sans-serif;
+    font-size: 18px;
+    padding: 0;
+}
+.description__feature-information {
+    position: absolute;
+    bottom: 0;
+    display: flex;
+}
+
+.description__item {
+    margin-left: 52px;
+    color: #828282;
+}
+.description__item:first-child {
+    margin-left: 0;
+}
+.description__title {
+    font-size: 24px;
+    color: #575757;
+}
+
+.descriptions-right {
+    width: 40%;
+    position: relative;
+}
+
+.descriptions-right__images {
+    width: 100%;
+}
+
+.descriptions-right__woman {
+    width: 100%;
+    animation: opacity;
+    animation-duration: 2s;
+}
+
+@keyframes opacity {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 100%;
+        transition: .5s;
+    }
+}
+
+.happy-customer {
+    opacity: 0;
+    position: absolute;
+    margin-top: -180px;
+    margin-left: -80px;
+    display: flex;
+    align-items: center;
+    background: white;
+    padding: 5px;
+    border-radius: 50px;
+    width: 280px;
+    transition: ease-in-out;
+    animation: happy-customers 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.happy-customer__description {
+    margin-left: 20px;
+}
+
+.happy-customer__reviews {
+    margin-left: 10px;
+}
+
+.happy-customer__reviews span {
+    font-family: Poppins-Regular, sans-serif;
+    color: rgba(87, 87, 87, 0.5);
+    font-size: 12px;
+}
+
+.happy-customer__rating {
+    display: flex;
+}
+
+@keyframes happy-customers {
+    0% {
+        transform: translatex(-50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.countCal {
+    width: 165px;
+    position: absolute;
+    right: 0;
+    margin-top: -230px;
+    margin-right: 0px;
+    opacity: 0;
+    transition: ease-in-out;
+    animation: countCal 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+.countCal img {
+    width: 100%;
+}
+
+@keyframes countCal {
+    0% {
+        transform: translatex(50%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}

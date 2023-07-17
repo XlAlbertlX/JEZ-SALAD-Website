@@ -1,0 +1,102 @@
+.foodsMenu {
+    width: 100%;
+    padding: 100px 135px;
+    box-sizing: border-box;
+}
+
+.menu-title {
+    margin: 0 auto;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu-title__mini {
+    color: #FB9333;
+    text-align: center;
+    font-family: Poppins-Medium, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 180%;
+    letter-spacing: -0.4px;
+}
+
+.menu-title__main {
+    color: #585858;
+    text-align: center;
+    font-family: Poppins-Regular, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 67.2px */
+    letter-spacing: -0.96px;
+}
+
+.menu-title__main span{
+    color: #FB9333;
+}
+
+.menu-cards {
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-cards__card {
+    height: 521px;
+    width: 28%;
+    border-radius: 50px;
+    position: relative;
+    padding: 40px;
+    box-sizing: border-box;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.menu-cards__name {
+    position: absolute;
+    color: #FFF;
+    font-family: Poppins-Regular,sans-serif;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 130%;
+    bottom: 90px;
+}
+
+.menu-cards__price {
+    position: absolute;
+    color: #FFF;
+    font-family: Poppins-Regular,sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 130%;
+    bottom: 40px;
+}
+
+.menu-cards__card img {
+    display: block;
+    margin-left: -40px;
+    margin-top: -40px;
+    transition: .4s ease-in;
+
+}
+
+.menu-cards__card.card1 img:hover,
+.menu-cards__card.card2 img:hover,
+.menu-cards__card.card3 img:hover {
+    transform: scale(120%);
+    cursor: pointer;
+}
+
+
+.menu-cards__card.card2 {
+    background-position: center;
+}
+
+.menu-cards__card.card3 {
+    background-position: center;
+}
